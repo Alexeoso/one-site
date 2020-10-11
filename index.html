@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!--.Название сайта.-->
+	<title>FLEXBOX</title>
+
+	<!--.Кодировка.-->
+	<meta charset="UTF-8">
+
+	<!--.Подключение CSS.-->
+	<link rel="stylesheet" href="style/style.css">
+
+	<!--...Настройка адаптивности страницы...-->
+	<!--Фиксированая ширина-->
+	<!--<meta name="viewport" content="width=1440">-->
+	<!--Адаптивность-->
+	<!--<meta name="viewport" content="width=device-width">-->
+	<!--Адаптивность с отображением на мобильных устройствах-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<!--Отключает принудительную ссылку у номера телефона на iOS-->
+	<!--<meta name="format-detection" content="telephone=no">-->
+
+	<!--SEO (SEARCH ENGINE OPTIMIZATION)-->
+	<!--Краткое описание страницы-->
+	<meta name="description" content="До 140 символов. Тут описание сайта">
+	<!--. Ключевые слова страницы .-->
+	<meta name="keywords" content="кл-слово, кл-слово, кл-слово, Не больше 20 слов">
+	<!-- Управление доступом поисковых роботов к странице -->
+	<meta name="robots" content="none">
+	<!--. Афтор страницы .-->
+	<meta name="Author" content="Тот самый Я">
+	<!--. Афторские права .-->
+	<meta name="Copyright" content="Алексея. У">
+	<!--. Адрес афтора .-->
+	<meta name="Address" content="Адрес">
+
+	<!-- Редирект (перезагрузка) страниы -->
+	<!-- Задержка в секундах; url=Адрес сайта/страницы -->
+	<!--<meta http-equiv="refresh" content="0; url=">-->
+
+	<!--Вид страниы в посте на Facebook
+	
+	 локализация сайта, для русскоязычного сайта ru_RU -->
+	<!--<meta property="og:locale" content="ru_RU">-->
+	<!-- тип контента, по умолчанию используется article -->
+	<!--<meta property="og:type" content="article">-->
+	<!-- заголовок страницы, который будет выводится в записи социальной сети -->
+	<!--<meta property="og:title" content="META теги">-->
+	<!-- описание страницы -->
+	<!--<meta property="og:description" content="Описание страницы про META теги">-->
+	<!-- ссылка на изображение, которое будет публиковаться в записи -->
+	<!--<meta property="og:image" content="http://fls.guru/metaimg/bg.jpg">-->
+	<!-- ссылка на текущую страницу -->
+	<!--<meta property="og:url" content="http://fls.guru/meta/ ">-->
+	<!-- название сайта -->
+	<!--<meta property="og:site_name" content="Фрилансер по жизни">-->
+	<!--Проверить разметку можно в валидаторе от Facebook https://developers.facebook.com/tools/debug/sharing/-->
+
+	<!--VK _уже_ не надо настраивать-->
+	<!--Для создания Twitter Cards:
+
+	 Тип карты, по умолчанию используется summary -->
+	<!--<meta name="twitter:card" content="summary">-->
+	<!-- Имя/логин автора -->
+	<!--<meta name="twitter:site" content="Жека">-->
+	<!-- Название страницы -->
+	<!--<meta name="twitter:title" content="META теги">-->
+	<!-- Описание страницы -->
+	<!--<meta name="twitter:description" content="про META теги">-->
+	<!-- Cсылка на изображение -->
+	<!--<meta name="twitter:image" content="http://fls.guru/metaimg/bg.jpg">-->
+	<!--Проверяем результат в валидаторе твиттер https://cards-dev.twitter.com/validator-->
+
+
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="headertop">
+				<div class="headertop__container container">
+					<div class="headertop__contakts">
+						<div class="headertop__tel tel">+38 (096) 309 21 45</div>
+						<div class="headertop__emale emale">layout585@gmail.com</div>
+					</div>
+					<a href="" class="headertop__becpl-Consul becpl-Consul">
+						<span>Бесплатная консультация</span>
+					</a>
+				</div>
+			</div>
+
+
+			<div class="headerbottom">
+				<div class="headerbottom__container container">
+					<div class="headerbottom__logo">
+						<img src="img/Header/logotype_1478.png" alt="logotype_1478.png">
+					</div>
+					<nav class="headerbottom__nav">
+						<a href="" class="headerbottom__nav-items headerbottom__item1">Главная</a>
+						<a href="" class="headerbottom__nav-items headerbottom__item2">О компании</a>
+						<a href="" class="headerbottom__nav-items headerbottom__item3">Услуги</a>
+						<a href="" class="headerbottom__nav-items headerbottom__item4">Контакты</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="two">
+
+			<div class="two__fon-zagolovok1 zagolovok">
+				<div class="zagolovok__fon-fool">
+					<div class="zagolovok__fon-image">
+						<img src="img/two/two_fon.png" alt="">
+					</div>
+				</div>
+				<div class="zagolovok__container container">
+					<h1 class="zagolovok__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
+					<p class="zagolovok__text">
+						Полное прекращение существования юридического лица с сохранением <br> легальности всей
+						предыдущей деятельности.
+					</p>
+				</div>
+			</div>
+			<div class="two__fon-zagolovok2 zagolovok">
+				<div class="zagolovok__fon-fool">
+					<div class="zagolovok__fon-image">
+						<img src="img/two/two_fon.png" alt="">
+					</div>
+				</div>
+				<div class="zagolovok__container container">
+					<h1 class="zagolovok__title"></h1>
+					<p class="zagolovok__text">
+
+					</p>
+				</div>
+			</div>
+			<div class="two__fon-zagolovok3 zagolovok">
+				<div class="zagolovok__fon-fool">
+					<div class="zagolovok__fon-image">
+						<img src="img/two/two_fon.png" alt="">
+					</div>
+				</div>
+				<div class="zagolovok__container container">
+					<h1 class="zagolovok__title"></h1>
+					<p class="zagolovok__text">
+
+					</p>
+				</div>
+			</div>
+
+
+
+			<div class="two__container container">
+				<div class="two__button-left button-slide"></div>
+				<div class="two__button-center so-strelkoy">
+					<a href="" class="so-strelkoy__span two__button-span">Оставить заявку</a>
+					<a href="" class="so-strelkoy__strelka"></a>
+				</div>
+				<div class="two__button-right button-slide"></div>
+			</div>
+		</div>
+
+		<div class="three">
+			<div class="three__top">
+				<div class="three__top-container container">
+					<div class="three__top-left">
+						<h2 class="three__top-title">
+							<span class="three__top-title-span"></span>
+							<span>Наши Услуги</span>
+						</h2>
+						<p class="three__top-text">
+							Комплексный подход к вашему вопросу, своевременная <br> правовую помощь, представление
+							интересов во всех <br> судебных инстанциях.
+						</p>
+					</div>
+					<div class="three__top-right">
+						<a href="" class="three__top-vse-usluge">Показать все услуги</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="three__bottom">
+				<div class="three__bottom-container container">
+					<div class="three__bottom-columns-1 columns">
+						<div class="columns__icon">
+							<img src="img/three/molotok.svg" alt="">
+						</div>
+						<h3 class="columns__title">Банкротство и ликвидация</h3>
+						<p class="columns__text">Полное прекращение существования юридического лица с сохранением
+							ле-гальности всей предыдущей деятельности</p>
+
+						<div class="columns__bottom">
+							<a href="" class="columns__podrobnee">Подробнее</a>
+							<div class="columns__zakazat zakazat">
+								<a href="" class="zakazat__text">Заказать</a>
+								<a href="" class="zakazat__strelka"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="three__bottom-columns-2 columns">
+						<div class="columns__icon">
+							<img src="img/three/zdanie.svg" alt="">
+						</div>
+						<h3 class="columns__title">Адвокатское сопровождение</h3>
+						<p class="columns__text">Мы гарантируем полное профессиональное обслуживание клиентов в
+							заявленных сферах деятельности и соблюдение
+							конфиденциальности.</p>
+
+						<div class="columns__bottom">
+							<a href="" class="columns__podrobnee">Подробнее</a>
+							<div class="columns__zakazat zakazat">
+								<a href="" class="zakazat__text">Заказать</a>
+								<a href="" class="zakazat__strelka"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="three__bottom-columns-3 columns">
+						<div class="columns__icon">
+							<img src="img/three/portfele.svg" alt="">
+						</div>
+						<h3 class="columns__title">Налоговый аудит</h3>
+						<p class="columns__text">
+							<span>Налоговый аудит проводят перед прове-</span>
+							<span>дением налоговых проверок; при оценке</span>
+							<span>возможных налоговых рисков; при-</span>
+							оптимизации налогообложения.
+						</p>
+
+						<div class="columns__bottom">
+							<a href="" class="columns__podrobnee">Подробнее</a>
+							<div class="columns__zakazat zakazat">
+								<a href="" class="zakazat__text">Заказать</a>
+								<a href="" class="zakazat__strelka"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="four">
+			<div class="four__fool-fon">
+				<div class="four__image">
+					<img src="img/four/four_fon.png" alt="four_fon.png">
+				</div>
+			</div>
+
+			<div class="four__container container">
+				<h2 class="four__title">О компании</h2>
+				<p class="four__text">Компания специализируется на оказании услуг в сфере корпоративного
+					права,<br>налогового консалтинга, представительства в судах, ликвидации и банкротства<br>
+					предприятий. На сегодняшний день, коллектив компании объединяет<br>
+					высокопрофессиональных экспертов имеющих
+					специализации в отдельных областях права.</p>
+				<div class="four__uznat-bolshe so-strelkoy">
+					<a href="" class="so-strelkoy__span">Узнать больше</a>
+					<a class="so-strelkoy__strelka"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="five">
+			<div class="five__container container">
+				<div class="five__top">
+					<h2 class="five__title">Получить Консультацию</h2>
+					<p class="five__text">Комплексный подход к вашему вопросу, своевременная<br>правовую помощь,
+						представление интересов во всех<br>судебных инстанциях.</p>
+				</div>
+
+				<div class="five__bottom">
+					<form action="#" method="GET" id="form1" class="five__form form">
+						<div class="form__left">
+							<div class="form__block-emale">
+								<div class="form__emale-title form__title">E-mail</div>
+								<input type="email" tabindex="1" name="email" class="form__emale" form="form1">
+							</div>
+
+							<div class="form__block-tel">
+								<div class="form__tel-title form__title">Контактный телефон</div>
+								<input type="tel" tabindex="2" required name="tel" class="form__tel" form="form1">
+							</div>
+
+							<div class="form__block-fio">
+								<div class="form__fio-title form__title">ФИО</div>
+								<input type="text" tabindex="3" required name="fio" class="form__fio" form="form1">
+							</div>
+
+							<div class="form__block-topic">
+								<div class="form__topic-title form__title">Тема вопроса</div>
+								<input list="topic" type="text" tabindex="4" name="topic" class="form__topic" form="form1">
+								<datalist id="topic">
+									<option value="Первая тема"></option>
+									<option value="Вторая тема"></option>
+									<option value="Третья тема"></option>
+								</datalist>
+							</div>
+						</div>
+
+						<div class="form__right">
+							<div class="form__message-title form__title">Сообщение</div>
+							<textarea name="message" tabindex="5" class="form__message" form="form1"></textarea>
+
+							<div class="form__submit">
+								<button type="submit" name="submit" form="form1" class="form__submit-span" value="submit">Получить консультацию</button>
+								<button type="submit" name="submit" form="form1" class="form__submit-strelka" value=""></button>
+							</div>
+						</div>
+					</form>
+					<div class="five__girle">
+						<img src="img/five/girl.jpg" alt="girl.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="six">
+			<div class="six__fool-fon">
+				<div class="six__image">
+					<img src="img/six/six_fon.png" alt="six_fon.png">
+				</div>
+			</div>
+
+			<div class="six__container container">
+
+				<div class="six__column-1 six__columns">
+					<div class="six__galochka galochka"></div>
+					<h2 class="six__title">Десятки добровольных ликвидаций ежемесячно</h2>
+					<p class="six__text">
+						Мы умеем минимизировать все риски в процессе добровольной ликвидации
+						юридических лиц.
+					</p>
+				</div>
+
+				<div class="six__column-2 six__columns">
+					<div class="six__galochka galochka"></div>
+					<h2 class="six__title">Отличное знание законов в сфере банкротства</h2>
+					<p class="six__text">Позволяют нам эффективно отстаивать как интересы кредиторов, так и
+						интересы собственников проблемной организации.
+					</p>
+				</div>
+
+				<div class="six__column-3 six__columns">
+					<div class="six__galochka galochka"></div>
+					<h2 class="six__title">Большой опыт сопровождения банкротства</h2>
+					<p class="six__text">Мы обладаем большим опытом сопровождения процедур банкротства предприятий.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="seven">
+			<div class="seven__container container">
+				<div class="seven__left">
+					<h2 class="seven__title">Новости Компании</h2>
+					<p class="seven__text">Комплексный подход к вашему вопросу, своевременная<br>правовую помощь, представление интересов во всех<br>судебных инстанциях.</p>
+
+					<div class="seven__column-1 column-1">
+						<div class="column-1__zakladka"></div>
+						<h3 class="column-1__title">Банкротство и ликвидация предприятия в<br>Украине</h3>
+						<p class="column-1__text">«На сегодняшний день, коллектив компании объединяет высоко-<br>профессиональных экспертов имеющих специализации в отдель-<br>ных областях права. На сегодняшний день, коллектив компании<br>объединяет высокопрофессиональных экспертов имеющих спе-<br>циализации в отдельных областях права. На сегодняшний день,<br>коллектив компании объединяет высокопрофессиональных экс-<br>пертов имеющих специализации в отдельных областях права...»</p>
+						<p class="column-1__derector">Андрей Ворошилов, генеральный директор компании Bankom</p>
+					</div>
+					<div class="seven__slide seven-slide">
+						<div class="seven-slide__left button-slide"></div>
+						<div class="seven-slide__right button-slide"></div>
+					</div>
+				</div>
+
+				<div class="seven__right">
+					<button class="seven__vse-usluge">Открыть все новости</button>
+					<div class="seven__right-columns">
+						<div class="seven__column-2 columns-right">
+							<div class="columns-right__fool-fon">
+								<div class="columns-right__image">
+									<img src="img/seven/thoto_1.jpg" alt="thoto_1.jpg">
+								</div>
+							</div>
+							<div class="columns-right__zaklagka"><span>03.04</span></div>
+							<h4 class="columns-right__title">Новость компании</h4>
+							<p class="columns-right__text">На сегодняшний день, коллектив<br>компании объединяет высокопрофес-<br>сиональных экспертов имеющих<br>специализации в отдельных областях<br>права...»</p>
+						</div>
+
+						<div class="seven__column-3 columns-right">
+							<div class="columns-right__fool-fon">
+								<div class="columns-right__image">
+									<img src="img/seven/thoto_2.jpg" alt="thoto_2.jpg">
+								</div>
+							</div>
+							<div class="columns-right__zaklagka"><span>03.04</span></div>
+							<h4 class="columns-right__title">Новость компании</h4>
+							<p class="columns-right__text">На сегодняшний день, коллектив<br>компании объединяет высокопрофес-<br>сиональных экспертов имеющих<br>специализации в отдельных областях<br>права...»</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="eight">
+			<div class="eight__container container">
+				<div class="eight__left">
+					<h2 class="eight__title">Комплексное закрытие предприятия</h2>
+					<p class="eight__text">Полное прекращение существования юридического<br>лица с сохранением легальности всей предыдущей<br>деятельности.</p>
+					<a href="" class="eight__becpl-Consul becpl-Consul">
+						<span>Бесплатная консультация</span>
+					</a>
+
+					<div class="eight__contacts">
+						<div class="eight__tel tel">+38 (096) 309 21 45</div>
+						<div class="eight__emale emale">layout585@gmail.com</div>
+						<div class="eight__adres adres">Киев, ул.Пушиной, 13</div>
+					</div>
+				</div>
+				<div class="eight__right">
+					<div class="" id="eight__map">
+						<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.3624991082347!2d30.366467475851685!3d50.45754924022617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc919501b4ef%3A0x71a476f68f4c8246!2z0YPQuy4g0KTQtdC-0LTQvtGA0Ysg0J_Rg9GI0LjQvdC-0LksIDEzLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2sru!4v1602080030411!5m2!1sru!2sru" width="632" height="251" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer__container container">
+				<div class="footer__content">
+					<div class="footer__prava">
+						© 2017 Template by Anastasia Shaposhnyk. Все права защищены.
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/style.js"></script>
+</body>
+
+</html>
