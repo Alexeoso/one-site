@@ -1308,6 +1308,10 @@ footer {
 		margin: 30px 15px 0px 0px;
 	}
 
+	.zagolovok__fon-image {
+		overflow: hidden;
+	}
+
 	.zagolovok__fon-image img {
 		height: 100%;
 		width: 150%;
@@ -1318,11 +1322,15 @@ footer {
 	}
 
 	.three {
-		height: 1270px;
+		height: 1310px;
 	}
 
 	.three__top-container {
 		justify-content: space-between;
+	}
+
+	.three__top-title {
+		margin-top: 40px;
 	}
 
 	.three__top-title span {
@@ -1367,6 +1375,10 @@ footer {
 
 	.columns {
 		width: 290px;
+		height: 350px;
+	}
+
+	.three__bottom-columns-1 {
 		height: 330px;
 	}
 
@@ -1461,7 +1473,6 @@ footer {
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		padding: 5px 5px;
 	}
 
 	.six__columns {
@@ -1482,6 +1493,10 @@ footer {
 	.six__text {
 		line-height: 20px;
 		width: 220px;
+	}
+
+	.six__column-1 {
+		margin-top: 16px;
 	}
 
 	.seven {
@@ -1525,7 +1540,7 @@ footer {
 	}
 
 	.seven__slide {
-		bottom: 775px;
+		bottom: 785px;
 		right: 10px;
 	}
 
@@ -1536,13 +1551,17 @@ footer {
 	.seven__vse-usluge {
 		width: 160px;
 		height: 40px;
-		top: 575px;
+		top: 565px;
 		right: 152px;
 	}
 
 	.seven__column-3 {
 		bottom: 160px;
 		margin-top: 0px;
+	}
+
+	.column-1 {
+		height: 412px;
 	}
 
 	.column-1__derector {
