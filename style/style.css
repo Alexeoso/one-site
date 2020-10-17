@@ -557,7 +557,7 @@ footer {
 .zakazat {
   width: 145px;
   height: 37%;
-  @include flexbox();
+  display: flex;
   justify-content: space-between;
   border: 2px solid #ffc222;
   border-right: none;
