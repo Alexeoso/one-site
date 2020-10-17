@@ -538,7 +538,8 @@ footer {
 .columns__bottom {
   display: flex;
   align-items: center;
-  margin: 70px 0px 0px 0px;
+  margin: 50px 0px 0px 0px;
+  border: 1px solid #000;
 }
 .columns__podrobnee {
   font-size: 14px;
@@ -556,7 +557,7 @@ footer {
 
 .zakazat {
   width: 145px;
-  height: 37%;
+  height: 40px;
   display: flex;
   justify-content: space-between;
   border: 2px solid #ffc222;
@@ -573,7 +574,6 @@ footer {
 }
 .zakazat__strelka {
   width: 21px;
-  height: 38px;
   background-color: #ffc222;
   display: block;
   background-image: url(../img/main/strelka-bel.svg);
