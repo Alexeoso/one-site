@@ -427,7 +427,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 137px;
+  margin-top: 120px;
   height: 608px;
 }
 .three__top-container {
@@ -538,7 +538,7 @@ footer {
 .columns__bottom {
   display: flex;
   align-items: center;
-  margin: 65px 0 0 0px;
+  margin: 70px 0px 0px 0px;
 }
 .columns__podrobnee {
   font-size: 14px;
@@ -546,7 +546,6 @@ footer {
   font-weight: 400;
   text-decoration: underline;
   color: #050505;
-  margin: 0px 0px 0px 0px;
 }
 .columns__zakazat {
   transition: 700ms;
@@ -565,16 +564,12 @@ footer {
 }
 .zakazat__text {
   font-size: 14px;
-  line-height: 24px;
   font-weight: 500;
   letter-spacing: 0.025em;
   color: #373636;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   width: 125px;
-  height: 40px;
-  padding: 0px 0px 5px 0px;
+  margin: 10px 0px 0px 0px;
 }
 .zakazat__strelka {
   width: 21px;
@@ -1256,6 +1251,7 @@ footer {
 
   .three {
     height: 1310px;
+    margin-top: 37px;
   }
   .three__top-container {
     justify-content: space-between;
