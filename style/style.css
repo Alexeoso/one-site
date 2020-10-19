@@ -477,33 +477,17 @@ footer {
   margin: 87px 40px 0px 0px;
 }
 .three__bottom {
-  padding-bottom: 62px;
+  margin-bottom: 10px;
 }
 .three__bottom-container {
   display: flex;
   justify-content: space-between;
 }
-.three__bottom-columns-1 .columns__bottom {
-  margin: 85px 0px 0px 0px;
-}
-.three__bottom-columns-1 .columns__zakazat {
-  margin-left: 65px;
-}
-.three__bottom-columns-2 .columns__podrobnee {
-  margin: -16px 77px 0px 0px;
-}
-.three__bottom-columns-2 .columns__zakazat {
-  margin-top: -16px;
-}
 .three__bottom-columns-3 .columns__icon {
-  margin: 10px 0px 0px 0px;
+  margin-top: 10px;
 }
-.three__bottom-columns-3 .columns__podrobnee {
-  margin: 5px 54px 0px 0px;
-}
-
 .columns {
-  padding: 24px 30px 39px 30px;
+  padding: 24px 30px 0px 30px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -511,7 +495,7 @@ footer {
   display: flex;
   font-size: 0;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   margin-top: 67px;
   width: 32%;
   height: 363px;
@@ -535,11 +519,22 @@ footer {
   width: 285px;
   margin: 20px 0px 0px 0px;
 }
+.columns__top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  align-items: center;
+}
 .columns__bottom {
   display: flex;
   align-items: center;
-  margin: 50px 0px 0px 0px;
-  border: 1px solid #000;
+  justify-content: space-between;
+  margin: 0px 0px 55px 0px;
+  width: 100%;
 }
 .columns__podrobnee {
   font-size: 14px;
@@ -567,10 +562,10 @@ footer {
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.025em;
-  color: #373636;
   text-align: center;
   width: 125px;
   margin: 10px 0px 0px 0px;
+  color: #373636;
 }
 .zakazat__strelka {
   width: 21px;
@@ -1271,7 +1266,7 @@ footer {
   }
   .three__top-vse-usluge {
     position: absolute;
-    top: 110px;
+    top: 95px;
     left: 45px;
   }
   .three__bottom {
@@ -1280,9 +1275,6 @@ footer {
   .three__bottom-container {
     flex-direction: column;
     align-items: center;
-  }
-  .three__bottom-columns-1 .columns__podrobnee {
-    margin-top: -63px;
   }
   .three__bottom-columns-2 {
     margin-top: 10px;
@@ -1298,6 +1290,9 @@ footer {
 
   .three__bottom-columns-1 {
     height: 330px;
+  }
+  .three__bottom-columns-1 .columns__podrobnee {
+    margin-top: 20px;
   }
 
   .four {
