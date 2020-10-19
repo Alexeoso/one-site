@@ -202,10 +202,10 @@ header {
   display: none;
   position: relative;
   transition: 900ms;
-  margin: 20px -10px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 .headerbottom__burger span {
-  width: 70px;
+  width: 65px;
   height: 8px;
   background-color: rgba(112, 109, 109, 0.761);
   display: block;
@@ -214,7 +214,7 @@ header {
 .headerbottom__burger::before {
   content: "";
   position: absolute;
-  width: 70px;
+  width: 65px;
   height: 10px;
   border-top-left-radius: 45px;
   border-top-right-radius: 45px;
@@ -225,7 +225,7 @@ header {
 .headerbottom__burger::after {
   content: "";
   position: absolute;
-  width: 70px;
+  width: 65px;
   height: 10px;
   background-color: #ffc222;
   bottom: 0;
