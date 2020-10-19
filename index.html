@@ -1,459 +1,1544 @@
-<!DOCTYPE html>
-<html lang="ru">
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto:wght@100;400;500&display=swap");
+@font-face {
+  font-family: "MyriadPro";
+  src: url("fonts/MyriadPro-Cond.eot");
+  src: local("☺"), url("fonts/MyriadPro-Cond.woff") format("woff"), url("fonts/MyriadPro-Cond.ttf") format("truetype"), url("fonts/MyriadPro-Cond.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fonts/FontAwesome.eot");
+  src: local("☺"), url("fonts/FontAwesome.woff") format("woff"), url("fonts/FontAwesome.ttf") format("truetype"), url("fonts/FontAwesome.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
-<head>
-	<!--.Название сайта.-->
-	<title>КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</title>
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-	<!--.Кодировка.-->
-	<meta charset="UTF-8">
+:focus, :active {
+  outline: none;
+}
 
-	<!--.Подключение CSS.-->
-	<link rel="stylesheet" href="style/style.css">
+a:focus, a:active {
+  outline: none;
+}
 
-	<!--...Настройка адаптивности страницы...-->
-	<!--Фиксированая ширина-->
-	<!--<meta name="viewport" content="width=1440">-->
-	<!--Адаптивность-->
-	<!--<meta name="viewport" content="width=device-width">-->
-	<!--Адаптивность с отображением на мобильных устройствах-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-	<!--Отключает принудительную ссылку у номера телефона на iOS-->
-	<!--<meta name="format-detection" content="telephone=no">-->
+nav, footer, header, aside {
+  display: block;
+}
 
-	<!--SEO (SEARCH ENGINE OPTIMIZATION)-->
-	<!--Краткое описание страницы-->
-	<meta name="description" content="До 140 символов. Тут описание сайта">
-	<!--. Ключевые слова страницы .-->
-	<meta name="keywords" content="кл-слово, кл-слово, кл-слово, Не больше 20 слов">
-	<!-- Управление доступом поисковых роботов к странице -->
-	<meta name="robots" content="none">
-	<!--. Афтор страницы .-->
-	<meta name="Author" content="Тот самый Я">
-	<!--. Афторские права .-->
-	<meta name="Copyright" content="Алексея. У">
-	<!--. Адрес афтора .-->
-	<meta name="Address" content="Адрес">
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 
-	<!-- Редирект (перезагрузка) страниы -->
-	<!-- Задержка в секундах; url=Адрес сайта/страницы -->
-	<!--<meta http-equiv="refresh" content="0; url=">-->
+input, button, textarea {
+  font-family: inherit;
+}
 
-	<!--Вид страниы в посте на Facebook
-	
-	 локализация сайта, для русскоязычного сайта ru_RU -->
-	<!--<meta property="og:locale" content="ru_RU">-->
-	<!-- тип контента, по умолчанию используется article -->
-	<!--<meta property="og:type" content="article">-->
-	<!-- заголовок страницы, который будет выводится в записи социальной сети -->
-	<!--<meta property="og:title" content="META теги">-->
-	<!-- описание страницы -->
-	<!--<meta property="og:description" content="Описание страницы про META теги">-->
-	<!-- ссылка на изображение, которое будет публиковаться в записи -->
-	<!--<meta property="og:image" content="http://fls.guru/metaimg/bg.jpg">-->
-	<!-- ссылка на текущую страницу -->
-	<!--<meta property="og:url" content="http://fls.guru/meta/ ">-->
-	<!-- название сайта -->
-	<!--<meta property="og:site_name" content="Фрилансер по жизни">-->
-	<!--Проверить разметку можно в валидаторе от Facebook https://developers.facebook.com/tools/debug/sharing/-->
+input::-ms-clear {
+  display: none;
+}
 
-	<!--VK _уже_ не надо настраивать-->
-	<!--Для создания Twitter Cards:
+button {
+  cursor: pointer;
+}
 
-	 Тип карты, по умолчанию используется summary -->
-	<!--<meta name="twitter:card" content="summary">-->
-	<!-- Имя/логин автора -->
-	<!--<meta name="twitter:site" content="Жека">-->
-	<!-- Название страницы -->
-	<!--<meta name="twitter:title" content="META теги">-->
-	<!-- Описание страницы -->
-	<!--<meta name="twitter:description" content="про META теги">-->
-	<!-- Cсылка на изображение -->
-	<!--<meta name="twitter:image" content="http://fls.guru/metaimg/bg.jpg">-->
-	<!--Проверяем результат в валидаторе твиттер https://cards-dev.twitter.com/validator-->
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
 
+a, a:visited {
+  text-decoration: none;
+}
 
+a:hover {
+  text-decoration: none;
+}
 
+ul li {
+  list-style: none;
+}
 
-</head>
+img {
+  vertical-align: top;
+}
 
-<body>
-	<div class="wrapper">
-		<a name="glavnaya"></a>
-<header>
-	<div class="headertop">
-		<div class="headertop__container container">
-			<div class="headertop__contakts">
-				<a href="tel:+79867472680" class="headertop__tel tel">+38 (096) 309 21 45</a>
-				<a href="mailto:vyomavyomaharehare@gmail.com?subject=Ну что. Ну как. Я молодец" class="headertop__emale emale">layout585@gmail.com</a>
-			</div>
-			<a href="#bespl" class="headertop__becpl-Consul becpl-Consul">
-				<span>Бесплатная консультация</span>
-			</a>
-		</div>
-	</div>
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
 
+/*--------------------*/
+body {
+  width: 100%;
+  height: 100%;
+}
 
-	<div class="headerbottom">
-		<div class="headerbottom__container container">
-			<a href="https://youtu.be/JAvmbJwKOMI" class="headerbottom__logo">
-				<p class="one-p">LOGO</p> <p class="two-p"> <span class="span-1">T</span> <span class="span-2">Y</span> <span class="span-3">P</span> <span class="span-4">E</span> </p>
-			</a>
-			<div class="headerbottom__burger">
-				<span></span>
-			</div>
-			<nav class="headerbottom__nav">
-				<a href="#glavnaya" class="headerbottom__nav-items headerbottom__item1">Главная</a>
-				<a href="#ocomp" class="headerbottom__nav-items headerbottom__item2">О компании</a>
-				<a href="#usluge" class="headerbottom__nav-items headerbottom__item3">Услуги</a>
-				<a href="#contacts" class="headerbottom__nav-items headerbottom__item4">Контакты</a>
-			</nav>
-		</div>
-	</div>
-</header>		<div class="two">
-			
-			<div class="two__fon-zagolovok1 zagolovok">
-				<div class="zagolovok__fon-fool">
-					<div class="zagolovok__fon-image">
-						<img src="img/two/two_fon.png" alt="">
-					</div> 
-				</div>
-				<div class="zagolovok__container container">
-					<h1 class="zagolovok__title">КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ</h1>
-					<p class="zagolovok__text">
-						Полное прекращение существования юридического лица с сохранением <br> легальности всей
-						предыдущей деятельности.
-					</p>
-				</div>
-			</div>
-			<div class="two__fon-zagolovok2 zagolovok">
-				<div class="zagolovok__fon-fool">
-					<div class="zagolovok__fon-image">
-						<img src="img/two/two_fon.png" alt="">
-					</div>
-				</div>
-				<div class="zagolovok__container container">
-					<h1 class="zagolovok__title"></h1>
-					<p class="zagolovok__text">
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
 
-					</p>
-				</div>
-			</div>
-			<div class="two__fon-zagolovok3 zagolovok">
-				<div class="zagolovok__fon-fool">
-					<div class="zagolovok__fon-image">
-						<img src="img/two/two_fon.png" alt="">
-					</div>
-				</div>
-				<div class="zagolovok__container container">
-					<h1 class="zagolovok__title"></h1>
-					<p class="zagolovok__text">
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  z-index: 10;
+}
 
-					</p>
-				</div>
-			</div>
+.full {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+/*.full img{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    }*/
+header {
+  font-family: Roboto;
+  width: 100%;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 100;
+}
 
+.headertop {
+  background-color: #303030;
+  min-height: 45px;
+}
+.headertop__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.headertop__contakts {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #d3d2d2;
+  display: flex;
+}
+.headertop__emale {
+  margin-left: 35px;
+}
+.headerbottom {
+  min-height: 92px;
+}
+.headerbottom__container {
+  display: flex;
+  justify-content: space-between;
+}
+.headerbottom__logo {
+  display: block;
+  margin: 38px 0 0 5px;
+  font-size: 30px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.headerbottom__logo span {
+  display: inline-block;
+  transition: 100ms;
+}
+.headerbottom__logo span:hover {
+  transform: scale(1.5);
+}
+.headerbottom__logo .one-p {
+  color: #ffc222;
+  display: inline-block;
+}
+.headerbottom__logo .two-p {
+  display: inline-block;
+  font-weight: 100;
+  color: #ffffff;
+}
+.headerbottom__logo .two-p .span-1 {
+  animation: pb 0ms forwards 1s;
+}
+.headerbottom__logo .two-p .span-2 {
+  animation: pb 0ms forwards 1.25s;
+}
+.headerbottom__logo .two-p .span-3 {
+  animation: pb 0ms forwards 1.5s;
+}
+.headerbottom__logo .two-p .span-4 {
+  animation: pb 0ms forwards 1.75s;
+}
+@keyframes pb {
+  100% {
+    color: #212020;
+  }
+}
+.headerbottom__burger {
+  width: 70px;
+  height: 50px;
+  display: none;
+  position: relative;
+  transition: 900ms;
+  margin: 20px 0px 0px 0px;
+}
+.headerbottom__burger span {
+  width: 65px;
+  height: 8px;
+  background-color: rgba(112, 109, 109, 0.761);
+  display: block;
+  margin-top: 22px;
+}
+.headerbottom__burger::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 10px;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  background-color: #ffc222;
+  top: 0;
+  transition: 150ms;
+}
+.headerbottom__burger::after {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 10px;
+  background-color: #ffc222;
+  bottom: 0;
+  transition: 150ms;
+}
+.headerbottom__burger:active::before {
+  transform: rotate(-45deg);
+  top: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.headerbottom__burger:active::after {
+  transform: rotate(45deg);
+  bottom: 20px;
+}
+.headerbottom__burger:active span {
+  display: none;
+}
+.headerbottom__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.headerbottom__nav-items {
+  padding: 0 12px;
+  min-height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #323232;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 200ms linear;
+}
+.headerbottom__nav-items:hover {
+  box-shadow: 0px 0px 1px 1px #ffc222;
+}
+.headerbottom__item1 {
+  margin-right: 24px;
+}
+.headerbottom__item2 {
+  margin-right: 18px;
+}
+.headerbottom__item3 {
+  margin-right: 18px;
+}
+.headerbottom__item4 {
+  margin-right: -8px;
+}
 
-			<div class="two__container container">
-				
-				<div class="two__button-left button-slide"></div>
-				<div class="two__button-center so-strelkoy">
-					<a href="#bespl" class="so-strelkoy__span two__button-span"><span>Оставить заявку</span></a>
-					<a href="#bespl" class="so-strelkoy__strelka"></a>
-				</div>
-				<div class="two__button-right button-slide"></div>
-			</div>
-			<a name="usluge"></a>
-		</div>
+.tel {
+  color: #d3d2d2;
+  background-image: url(../img/main/trubochka.svg);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: 0px 4px;
+  padding-left: 20px;
+  width: 153px;
+  transition: 300ms;
+}
+.tel:hover {
+  color: #ffffff;
+}
 
-		<div class="three">
-			
-			<div class="three__top">
-				<div class="three__top-container container">
-					<div class="three__top-left">
-						<h2 class="three__top-title">
-							<span class="three__top-title-span"></span>
-							<span>Наши Услуги</span>
-						</h2>
-						<p class="three__top-text">
-							Комплексный подход к вашему вопросу, своевременная <br> правовую помощь, представление
-							интересов во всех <br> судебных инстанциях.
-						</p>
-					</div>
-					<div class="three__top-right">
-						<a href="" class="three__top-vse-usluge">Показать все услуги</a>
-					</div>
-				</div>
-			</div>
+.emale {
+  color: #d3d2d2;
+  background-image: url(../img/main/konvert.svg);
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: 0px 7px;
+  padding-left: 20px;
+  width: 168px;
+  transition: 300ms;
+}
+.emale:hover {
+  color: #ffffff;
+}
 
+.becpl-Consul {
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #1b1b1b;
+  width: 262px;
+  min-height: 45px;
+  background-color: #ffc222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+}
+.becpl-Consul:hover {
+  font-size: 15px;
+}
+.becpl-Consul span {
+  background-image: url(../img/main/portfel.svg);
+  background-size: 16px 16px;
+  background-repeat: no-repeat;
+  background-position: 3px 9px;
+  padding-left: 28px;
+}
 
-			<div class="three__bottom">
-				<div class="three__bottom-container container">
-					<div class="three__bottom-columns-1 columns">
-						<div class="columns__top">
-							<div class="columns__icon">
-								<img src="img/three/molotok.svg" alt="">
-							</div>
-							<h3 class="columns__title">Банкротство и ликвидация</h3>
-							<p class="columns__text">Полное прекращение существования юридического лица с сохранением
-								ле-гальности всей предыдущей деятельности</p>
-						</div>
+footer {
+  height: 43px;
+  background-color: #303030;
+  font-family: Roboto;
+  width: 100%;
+}
 
-						<div class="columns__bottom">
-							<a href="" class="columns__podrobnee">Подробнее</a>
-							<div class="columns__zakazat zakazat">
-								<a href="#bespl" class="zakazat__text">Заказать</a>
-								<a href="#bespl" class="zakazat__strelka"></a>
-							</div>
-						</div>
-					</div>
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__prava {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
 
-					<div class="three__bottom-columns-2 columns">
-						<div class="columns__top">
-							<div class="columns__icon">
-								<img src="img/three/zdanie.svg" alt="">
-							</div>
-							<h3 class="columns__title">Адвокатское сопровождение</h3>
-							<p class="columns__text">Мы гарантируем полное профессиональное обслуживание клиентов в
-								заявленных сферах деятельности и соблюдение
-								конфиденциальности.</p>
-						</div>
+.two {
+  min-height: 497px;
+  position: relative;
+  padding-top: 137px;
+}
+.two__fon-zagolovok2 {
+  display: none;
+}
+.two__fon-zagolovok3 {
+  display: none;
+}
+.two__container {
+  position: relative;
+  z-index: 7;
+  display: flex;
+  justify-content: space-between;
+}
+.two__button-left {
+  transform: scale(-1);
+  margin: 6px 0px 0px 0px;
+}
+.two__button-center {
+  margin: 46px 0px 0px 0px;
+}
+.two__button-right {
+  margin: 6px 0px 0px 0px;
+}
 
+.zagolovok__fon-image {
+  position: absolute;
+  width: 100%;
+  height: 497px;
+  top: 106px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.44);
+  display: block;
+}
+.zagolovok__fon-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.zagolovok__container {
+  padding: 123px 0 0 10px;
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.zagolovok__title {
+  font-family: Roboto;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.zagolovok__text {
+  font-family: PT Serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #d3d2d2;
+  margin: 17px 0 0 0px;
+}
 
-						<div class="columns__bottom">
-							<a href="" class="columns__podrobnee">Подробнее</a>
-							<div class="columns__zakazat zakazat">
-								<a href="#bespl" class="zakazat__text">Заказать</a>
-								<a href="#bespl" class="zakazat__strelka"></a>
-							</div>
-						</div>
-					</div>
+.button-slide {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-image: url(../img/main/strelka-bel.svg);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 300ms linear;
+}
+.button-slide:hover {
+  background-color: #ffc222;
+}
 
-					<div class="three__bottom-columns-3 columns">
-						<div class="columns__top">
-							<div class="columns__icon">
-								<img src="img/three/portfele.svg" alt="">
-							</div>
-							<h3 class="columns__title">Налоговый аудит</h3>
-							<p class="columns__text">
-								<span>Налоговый аудит проводят перед прове-</span>
-								<span>дением налоговых проверок; при оценке</span>
-								<span>возможных налоговых рисков; при-</span>
-								 оптимизации налогообложения.
-								 <a name="ocomp"></a>
-							</p>
-						</div>
+.so-strelkoy {
+  display: flex;
+  justify-content: space-between;
+  width: 179px;
+  height: 40px;
+  border: 1px solid #ffc222;
+  border-right: none;
+  transition: 0.5s;
+}
+.so-strelkoy:hover {
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.so-strelkoy__span {
+  display: block;
+  margin: 7px 0px 0px 0px;
+  width: 162px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+.so-strelkoy__strelka {
+  width: 21px;
+  height: 40px;
+  background-color: #ffc222;
+  display: block;
+  background-image: url(../img/main/strelka-bel.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 4px 13px;
+}
 
+.three {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 120px;
+  height: 608px;
+}
+.three__top-container {
+  display: flex;
+  justify-content: space-between;
+}
+.three__top-title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #212020;
+  margin: 57px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+.three__top-title span {
+  padding: 1px 0px 0px 42px;
+}
+.three__top-title-span {
+  display: block;
+  width: 106px;
+  height: 2px;
+  background-color: #fcc222;
+  margin-left: -10px;
+}
+.three__top-text {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #5e5e5e;
+  margin: 12px 0px 0px 140px;
+}
+.three__top-vse-usluge {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #373636;
+  border: 3px solid #e6e6e6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 223px;
+  height: 40px;
+  margin: 87px 40px 0px 0px;
+}
+.three__bottom {
+  margin-bottom: 10px;
+}
+.three__bottom-container {
+  display: flex;
+  justify-content: space-between;
+}
+.three__bottom-columns-3 .columns__icon {
+  margin-top: 10px;
+}
+.columns {
+  padding: 24px 30px 0px 30px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 67px;
+  width: 32%;
+  height: 363px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 7px 24px 3px rgba(91, 88, 88, 0.14);
+}
+.columns__title {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 18px 0px 0px 0px;
+}
+.columns__text {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #5e5e5e;
+  text-align: center;
+  width: 285px;
+  margin: 20px 0px 0px 0px;
+}
+.columns__top {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 0;
+  flex-direction: column;
+  align-items: center;
+}
+.columns__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0px 55px 0px;
+  width: 100%;
+}
+.columns__podrobnee {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #050505;
+}
+.columns__zakazat {
+  transition: 700ms;
+}
+.columns__zakazat:hover {
+  transform: translate(20px, 0px);
+}
 
-						<div class="columns__bottom">
-							<a href="" class="columns__podrobnee">Подробнее</a>
-							<div class="columns__zakazat zakazat">
-								<a href="#bespl" class="zakazat__text">Заказать</a>
-								<a href="#bespl" class="zakazat__strelka"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+.zakazat {
+  width: 145px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ffc222;
+  border-right: none;
+}
+.zakazat__text {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  text-align: center;
+  width: 125px;
+  margin: 10px 0px 0px 0px;
+  color: #373636;
+}
+.zakazat__strelka {
+  width: 21px;
+  background-color: #ffc222;
+  display: block;
+  background-image: url(../img/main/strelka-bel.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-		<div class="four">
-			<div class="four__fool-fon">
-				<div class="four__image">
-					<img src="img/four/four_fon.png" alt="four_fon.png">
-				</div>
-			</div>
+.four {
+  font-family: Roboto;
+  position: relative;
+  height: 300px;
+}
+.four__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.four__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 37px 0 0 15px;
+}
+.four__text {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #d3d2d2;
+  padding: 26px 0 0 15px;
+}
+.four__uznat-bolshe {
+  margin: 32px 0 0 16px;
+}
 
-			<div class="four__container container">
-				<h2 class="four__title">О компании</h2>
-				<p class="four__text">Компания специализируется на оказании услуг в сфере корпоративного
-					права,<br>налогового консалтинга, представительства в судах, ликвидации и банкротства<br>
-					предприятий. На сегодняшний день, коллектив компании объединяет<br>
-					высокопрофессиональных экспертов имеющих
-					специализации в отдельных областях права.</p>
-					<a name="bespl"></a>
-				<div class="four__uznat-bolshe so-strelkoy">
-					<a href="" class="so-strelkoy__span">Узнать больше</a>
-					<a class="so-strelkoy__strelka"></a>
-				</div>
-			</div>
-		</div>
+.so-strelkoy__span {
+  margin-left: 30px;
+}
+.so-strelkoy__strelka {
+  height: 38px;
+}
 
-		<div class="five">
-			
-			<div class="five__container container">
-				<div class="five__top">
-					<h2 class="five__title">Ну а теперь как? =)</h2>
-					<p class="five__text">Комплексный подход к вашему вопросу, своевременная<br>правовую помощь,
-						представление интересов во всех<br>судебных инстанциях.</p>
-				</div>
+.five {
+  font-family: Roboto;
+  width: 100%;
+  height: 515px;
+}
+.five__container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+}
+.five__title {
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: #212020;
+  position: relative;
+  padding-left: 135px;
+}
+.five__title::before {
+  content: "";
+  width: 106px;
+  height: 2px;
+  background-color: #ffc222;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.five__text {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #5e5e5e;
+  margin: 17px 0 0 0;
+  padding-left: 135px;
+}
+.five__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 0 0;
+}
+.five__girle {
+  position: absolute;
+  top: 55px;
+  right: -16px;
+}
 
-				<div class="five__bottom">
-					<form action="#" method="GET" id="form1" class="five__form form">
-						<div class="form__left">
-							<div class="form__block-emale">
-								<div class="form__emale-title form__title">E-mail</div>
-								<input type="email" tabindex="1" name="email" class="form__emale" form="form1">
-							</div>
+.form {
+  display: flex;
+}
+.form input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 0px 0px 0px 5px;
+}
+.form__title {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #282828;
+  margin: 3px 0px 0px 0px;
+}
+.form__right {
+  margin-left: 28px;
+}
+.form__message {
+  width: 557px;
+  height: 198px;
+  border: 1px solid #e6e6e6;
+  padding: 3px 3px 3px 3px;
+  resize: none;
+}
+.form__submit {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 211px;
+  height: 40px;
+  margin: 34px 0px 0px 346px;
+  border: 2px solid #ffc222;
+}
+.form__submit-span {
+  font-family: MyriadPro;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #282828;
+  margin-left: 15px;
+  background-color: #ffffff;
+}
+.form__submit-strelka {
+  display: block;
+  width: 21px;
+  height: 38px;
+  background-color: #ffc222;
+  background-image: url(../img/main/strelka-bel.svg);
+  background-size: 12px 12px;
+  background-repeat: no-repeat;
+  background-position: 4px 13px;
+}
 
-							<div class="form__block-tel">
-								<div class="form__tel-title form__title">Контактный телефон</div>
-								<input type="tel" tabindex="2" required name="tel" class="form__tel" form="form1">
-							</div>
+.six {
+  font-family: Roboto;
+  position: relative;
+  height: 287px;
+  width: 100%;
+}
+.six__image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.six__container {
+  display: flex;
+  justify-content: space-between;
+}
+.six__column-2 .six__title {
+  width: 300px;
+}
+.six__column-2 .six__galochka {
+  margin-top: 25px;
+}
+.six__columns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.six__galochka {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffc222;
+  background-image: url(../img/six/galochk.svg);
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-position: center;
+}
+.six__title {
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 28px;
+  text-align: center;
+  width: 309px;
+}
+.six__text {
+  font-family: PTSerif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #d3d2d2;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 320px;
+}
 
-							<div class="form__block-fio">
-								<div class="form__fio-title form__title">ФИО</div>
-								<input type="text" tabindex="3" required name="fio" class="form__fio" form="form1">
-							</div>
+.seven {
+  font-family: Roboto;
+  height: 655px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.seven__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 66px 0px 0px 0px;
+}
+.seven__title {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #212020;
+  position: relative;
+  padding-left: 135px;
+}
+.seven__title::before {
+  content: "";
+  width: 106px;
+  height: 2px;
+  background-color: #ffc222;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.seven__text {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #5e5e5e;
+  margin: 20px 0px 0px 135px;
+}
+.seven__column-1 {
+  padding: 0px 0px 47px 71px;
+  margin: 47px 0px 0px 0px;
+}
+.seven__slide {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+.seven__vse-usluge {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #373636;
+  width: 223px;
+  height: 40px;
+  border: 3px solid #e6e6e6;
+  margin: 50px 0 0 332px;
+}
+.seven__right-columns {
+  display: flex;
+}
+.seven__column-2 {
+  padding-right: 31px;
+}
+.column-1 {
+  width: 554px;
+  height: 341px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 1px rgba(128, 126, 126, 0.12);
+}
+.column-1__zakladka {
+  width: 65px;
+  height: 31px;
+  background-color: #ffc222;
+  margin: 0px 0px 0px -4px;
+  background-image: url(../img/seven/kavechke.svg);
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  background-position: center;
+}
+.column-1__title {
+  font-family: MyriadPro;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  color: #242424;
+  margin: 25px 0px 0px 0px;
+}
+.column-1__text {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #5e5e5e;
+  margin: 14px 0px 0px 0px;
+}
+.column-1__derector {
+  font-family: MyriadPro;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+  color: #212020;
+  margin: 34px 0px 0px 0px;
+}
 
-							<div class="form__block-topic">
-								<div class="form__topic-title form__title">Тема вопроса</div>
-								<input list="topic" type="text" tabindex="4" name="topic" class="form__topic"
-									form="form1">
-								<datalist id="topic">
-									<option value="Первая тема"></option>
-									<option value="Вторая тема"></option>
-									<option value="Третья тема"></option>
-								</datalist>
-							</div>
-						</div>
+.seven-slide {
+  display: flex;
+}
+.seven-slide__left {
+  border: 1px solid #dadada;
+  transform: scale(-1);
+  margin-right: 18px;
+  background-image: url(../img/main/strelka.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+}
+.seven-slide__right {
+  border: 1px solid #dadada;
+  background-image: url(../img/main/strelka.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center;
+}
 
-						<div class="form__right">
-							<div class="form__message-title form__title">Сообщение</div>
-							<textarea name="message" tabindex="5" class="form__message" form="form1"></textarea>
+.columns-right {
+  position: relative;
+  margin: 54px 0px 0px 0px;
+}
+.columns-right__zaklagka {
+  width: 47px;
+  height: 54px;
+  background-color: #ffc222;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 26px 0px 0px 5px;
+}
+.columns-right__zaklagka span {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #f9f9f9;
+}
+.columns-right__title {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #242424;
+  margin: 20px 0px 0px 0px;
+}
+.columns-right__text {
+  font-family: PT Serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: #5e5e5e;
+  margin: 17px 0px 0px 0px;
+}
 
-							<div class="form__submit">
-								<button type="submit" name="submit" form="form1" class="form__submit-span"
-									value="submit">Получить консультацию</button>
-								<button type="submit" name="submit" form="form1" class="form__submit-strelka"
-									value=""></button>
-							</div>
-						</div>
-					</form>
-					<div class="five__girle">
-						<img src="img/five/girl.jpg" alt="girl.jpg">
-					</div>
-				</div>
-			</div>
-		</div>
+.eight {
+  font-family: Roboto;
+  height: 339px;
+  width: 100%;
+  background-color: #595959;
+}
+.eight__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 0px 37px 0px;
+}
+.eight__title {
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+.eight__text {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #d3d2d2;
+  margin: 8px 0px 0px 0px;
+}
+.eight__becpl-Consul {
+  margin: 24px 0px 0px 0px;
+}
+.eight__contacts {
+  margin: 25px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+.eight__tel {
+  display: inline-block;
+  margin: 15px 0px 0px 3px;
+  width: 190px;
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: 0px 4px;
+  padding-left: 31px;
+}
+.eight__emale {
+  display: inline-block;
+  margin: 11px 0px 0px 0px;
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 0px 6px;
+  padding-left: 33px;
+}
+.eight__adres {
+  margin: 12px 0px 0px 1px;
+  background-size: 14px 14px;
+  background-repeat: no-repeat;
+  background-position: 0px 5px;
+  padding-left: 33px;
+  color: #d3d2d2;
+}
+.eight__adres:hover {
+  color: #ffffff;
+}
+.eight__right {
+  margin: 27px 0px 0px 0px;
+}
 
-		<div class="six">
-			<div class="six__fool-fon">
-				<div class="six__image">
-					<img src="img/six/six_fon.png" alt="six_fon.png">
-				</div>
-			</div>
+.adres {
+  background-image: url(../img/main/ukazatel.svg);
+}
 
-			<div class="six__container container">
+@media (max-width: 1200px) {
+  .two__button-left {
+    margin-top: 40px;
+  }
+  .two__button-center {
+    margin-top: 70px;
+  }
+  .two__button-right {
+    margin-top: 40px;
+  }
 
-				<div class="six__column-1 six__columns">
-					<div class="six__galochka galochka"></div>
-					<h2 class="six__title">Десятки добровольных ликвидаций ежемесячно</h2>
-					<p class="six__text">
-						Мы умеем минимизировать все риски в процессе добровольной ликвидации
-						юридических лиц.
-					</p>
-				</div>
+  .zagolovok__fon-image img {
+    width: 150%;
+    height: 100%;
+  }
 
-				<div class="six__column-2 six__columns">
-					<div class="six__galochka galochka"></div>
-					<h2 class="six__title">Отличное знание законов в сфере банкротства</h2>
-					<p class="six__text">Позволяют нам эффективно отстаивать как интересы кредиторов, так и
-						интересы собственников проблемной организации.
-					</p>
-				</div>
+  .container {
+    max-width: 768px;
+  }
 
-				<div class="six__column-3 six__columns">
-					<div class="six__galochka galochka"></div>
-					<h2 class="six__title">Большой опыт сопровождения банкротства</h2>
-					<p class="six__text">Мы обладаем большим опытом сопровождения процедур банкротства предприятий.
-					</p>
-				</div>
-				
-			</div>
-		</div>
+  .columns {
+    padding: 24px 6px 39px 6px;
+    width: 31.578%;
+  }
+  .columns__title {
+    font-size: 16px;
+  }
+  .columns__text {
+    font-size: 13px;
+    margin: 5px 0px 0px 0px;
+    max-width: 220px;
+  }
+  .columns__bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0 0 0px;
+  }
 
-		<div class="seven">
-			<div class="seven__container container">
-				<div class="seven__left">
-					<h2 class="seven__title">Новости Компании</h2>
-					<p class="seven__text">Комплексный подход к вашему вопросу, своевременная<br>правовую помощь, представление интересов во всех<br>судебных инстанциях.</p>
+  .three__bottom-columns-1 .columns__zakazat {
+    margin: 29px 0 0 0px;
+  }
+  .three__bottom-columns-1 .columns__podrobnee {
+    margin: -46px 0px 0px 0px;
+  }
 
-					<div class="seven__column-1 column-1">
-						<div class="column-1__zakladka"></div>
-						<h3 class="column-1__title">Банкротство и ликвидация предприятия в<br>Украине</h3>
-						<p class="column-1__text">«На сегодняшний день, коллектив компании объединяет высоко-<br>профессиональных экспертов имеющих специализации в отдель-<br>ных областях права. На сегодняшний день, коллектив компании<br>объединяет высокопрофессиональных экспертов имеющих спе-<br>циализации в отдельных областях права. На сегодняшний день,<br>коллектив компании объединяет высокопрофессиональных экс-<br>пертов имеющих специализации в отдельных областях права...»</p>
-						<p class="column-1__derector">Андрей Ворошилов, генеральный директор компании Bankom</p>
-					</div>
-					<div class="seven__slide seven-slide">
-						<div class="seven-slide__left button-slide"></div>
-						<div class="seven-slide__right button-slide"></div>
-					</div>
-				</div>
+  .three__bottom-columns-2 .columns__zakazat {
+    margin: 0px 0 0 0px;
+  }
+  .three__bottom-columns-2 .columns__podrobnee {
+    margin: 20px 0px 30px 0px;
+  }
 
-				<div class="seven__right">
-					<button class="seven__vse-usluge">Открыть все новости</button>
-					<div class="seven__right-columns">
-						<div class="seven__column-2 columns-right">
-							<div class="columns-right__fool-fon">
-								<div class="columns-right__image">
-									<img src="img/seven/thoto_1.jpg" alt="thoto_1.jpg">
-								</div>
-							</div>
-							<div class="columns-right__zaklagka"><span>03.04</span></div>
-							<h4 class="columns-right__title">Новость компании</h4>
-							<p class="columns-right__text">На сегодняшний день, коллектив<br>компании объединяет высокопрофес-<br>сиональных экспертов имеющих<br>специализации в отдельных областях<br>права...»</p>
-						</div>
+  .three__bottom-columns-3 .columns__icon {
+    margin: 10px 0px 0px 0px;
+  }
+  .three__bottom-columns-3 .columns__podrobnee {
+    margin: 20px 0px 30px 0px;
+  }
 
-						<div class="seven__column-3 columns-right">
-							<div class="columns-right__fool-fon">
-								<div class="columns-right__image">
-									<img src="img/seven/thoto_2.jpg" alt="thoto_2.jpg">
-								</div>
-							</div>
-							<div class="columns-right__zaklagka"><span>03.04</span></div>
-							<h4 class="columns-right__title">Новость компании</h4>
-							<p class="columns-right__text">На сегодняшний день, коллектив<br>компании объединяет высокопрофес-<br>сиональных экспертов имеющих<br>специализации в отдельных областях<br>права...»</p>
-						</div>
-					</div>
+  .form__message {
+    width: 232px;
+    height: 198px;
+  }
+  .form__submit {
+    margin: 36px 0px 0px 10px;
+  }
 
-				</div>
-			</div>
-		</div>
+  .seven {
+    font-family: Roboto;
+    height: 1000px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .seven__container {
+    display: flex;
+    flex-direction: column;
+    padding: 66px 0px 32px 0px;
+  }
+  .seven__title {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #212020;
+    position: relative;
+    padding-left: 135px;
+  }
+  .seven__title::before {
+    content: "";
+    width: 106px;
+    height: 2px;
+    background-color: #ffc222;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+  .seven__text {
+    font-family: PT Serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #5e5e5e;
+    margin: 20px 0px 0px 135px;
+  }
+  .seven__column-1 {
+    padding: 0px 0px 47px 71px;
+    margin: 47px 0px 0px 110px;
+  }
+  .seven__slide {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 35px;
+    position: absolute;
+    bottom: 390px;
+    right: 330px;
+  }
+  .seven__vse-usluge {
+    width: 203px;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 17px;
+    right: 0px;
+  }
+  .seven__right-columns {
+    display: flex;
+  }
+  .seven__column-2 {
+    padding-right: 10px;
+  }
 
-		<div class="eight">
-			<a name="contacts"></a>
-			<div class="eight__container container">
-				<div class="eight__left">
-					<h2 class="eight__title">Комплексное закрытие предприятия</h2>
-					<p class="eight__text">Полное прекращение существования юридического<br>лица с сохранением легальности всей предыдущей<br>деятельности.</p>
-					<a href="#bespl" class="eight__becpl-Consul becpl-Consul">
-						<span>Бесплатная консультация</span>
-					</a>
+  .columns-right {
+    position: relative;
+    margin: 54px 0px 0px 80px;
+  }
 
-					<div class="eight__contacts">
-						<a href="tel:+79867472680" class="eight__tel tel">+38 (096) 309 21 45</a>
-						<a href="https://online.yur.center/?utm_source=yandex&utm_medium=cpc&utm_campaign=2Ruki2&yclid=6063502024872321588" class="eight__emale emale">layout585@gmail.com</a>
-						<a href="https://yandex.ru/maps/-/CSH0Z-5Q" class="eight__adres adres">Киев, ул.Пушиной, 13</a>
-					</div>
-				</div>
-				<div class="eight__right">
-					<div class="" id="eight__map">
-						<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.3624991082347!2d30.366467475851685!3d50.45754924022617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cc919501b4ef%3A0x71a476f68f4c8246!2z0YPQuy4g0KTQtdC-0LTQvtGA0Ysg0J_Rg9GI0LjQvdC-0LksIDEzLCDQmtC40LXQsiwg0KPQutGA0LDQuNC90LAsIDAyMDAw!5e0!3m2!1sru!2sru!4v1602080030411!5m2!1sru!2sru" width="632" height="251" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-<footer>
-	<div class="footer__container container">
-		<div class="footer__content">
-			<div class="footer__prava">
-				© 2017 Template by Anastasia Shaposhnyk. Все права защищены.
-			</div>
-		</div>
-	</div>
-</footer>	</div>
-<script src="js/style.js"></script></body>
+  .map {
+    width: 380px;
+  }
 
-</html>
+  .six__columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .six__galochka {
+    margin-top: 10px;
+  }
+  .six__title {
+    font-size: 14px;
+    margin-top: 20px;
+    width: 244px;
+  }
+  .six__text {
+    font-size: 13px;
+    margin-top: 0px;
+    text-align: center;
+    line-height: 18px;
+    width: 220px;
+  }
+  .six__column-2 {
+    margin-left: 5px;
+  }
+
+  .eight__contacts {
+    margin: 10px 0px 0px 0px;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 318px;
+  }
+
+  .headertop__contakts {
+    font-size: 10px;
+    display: flex;
+    margin-top: 8px;
+  }
+  .headertop__tel {
+    margin-left: 20px;
+  }
+  .headertop__emale {
+    margin: 0px;
+  }
+  .headertop__becpl-Consul {
+    display: none;
+  }
+
+  .headerbottom {
+    height: 62px;
+  }
+  .headerbottom__burger {
+    display: block;
+  }
+  .headerbottom__logo {
+    margin: 37px 0 0 5px;
+  }
+  .headerbottom__nav {
+    display: none;
+  }
+
+  .two {
+    height: 430px;
+  }
+  .two__button-left {
+    margin: 40px 0px 0px 15px;
+  }
+  .two__button-center {
+    margin: 40px 0px 0px 0px;
+  }
+  .two__button-right {
+    margin: 40px 15px 0px 0px;
+  }
+
+  .zagolovok__fon-image {
+    overflow: hidden;
+    height: 430px;
+  }
+  .zagolovok__fon-image img {
+    width: 150%;
+    height: 100%;
+  }
+  .zagolovok__container {
+    padding: 23px 0 0 10px;
+  }
+
+  .three {
+    height: 1310px;
+    margin-top: 37px;
+  }
+  .three__top-container {
+    justify-content: space-between;
+  }
+  .three__top-title {
+    margin-top: 40px;
+  }
+  .three__top-title span {
+    padding: 0px 0px 0px 85px;
+  }
+  .three__top-title-span {
+    display: none;
+  }
+  .three__top-text {
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+  }
+  .three__top-vse-usluge {
+    position: absolute;
+    top: 95px;
+    left: 45px;
+  }
+  .three__bottom-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .three__bottom-columns-2 {
+    margin-top: 10px;
+  }
+  .three__bottom-columns-3 {
+    margin-top: 10px;
+  }
+
+  .columns {
+    width: 290px;
+    height: 350px;
+  }
+
+  .three__bottom-columns-1 {
+    height: 330px;
+  }
+  .three__bottom-columns-1 .columns__podrobnee {
+    margin-top: 20px;
+  }
+
+  .four {
+    height: 400px;
+  }
+  .four br {
+    display: none;
+  }
+
+  .five {
+    height: 770px;
+  }
+  .five__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+  }
+  .five__title {
+    padding-left: 0px;
+    margin: 0px 0 0 10px;
+  }
+  .five__title::before {
+    content: "";
+    display: none;
+  }
+  .five__text {
+    margin: 10px 0 0 10px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  .five__text br {
+    display: none;
+  }
+  .five__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0 0 0;
+  }
+  .five__girle {
+    display: none;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+  .form__submit {
+    margin: 20px 0px 0px 25px;
+  }
+  .form input {
+    margin: 0px 0px 0px 25px;
+  }
+  .form__title {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #282828;
+    margin: 3px 0px 0px 25px;
+  }
+  .form__right {
+    margin-left: 28px;
+  }
+  .form__message-title {
+    margin: 0px;
+  }
+  .form__message {
+    width: 264px;
+    height: 150px;
+    margin: 0px 0px 0px -2px;
+  }
+
+  .six {
+    height: 550px;
+  }
+  .six__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .six__columns {
+    margin-top: 10px;
+  }
+  .six__galochka {
+    width: 30px;
+    height: 30px;
+    margin-bottom: -7px;
+  }
+  .six__title {
+    line-height: 20px;
+    width: 220px;
+  }
+  .six__text {
+    line-height: 20px;
+    width: 220px;
+  }
+  .six__column-1 {
+    margin-top: 16px;
+  }
+
+  .seven {
+    font-family: Roboto;
+    height: 1400px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  .seven__container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 0px 0px;
+  }
+  .seven__title {
+    padding-left: 0px;
+    margin: 0 0 0 45px;
+  }
+  .seven__title::before {
+    content: "";
+    display: none;
+  }
+  .seven__text {
+    margin: 15px 0px 0px 20px;
+    text-align: center;
+    width: 270px;
+  }
+  .seven__column-1 {
+    padding: 0px 5px 47px 10px;
+    width: 300px;
+    height: 425px;
+    margin: 30px 0px 0px 7px;
+  }
+  .seven__column-1 br {
+    display: none;
+  }
+  .seven__slide {
+    bottom: 745px;
+    right: 10px;
+  }
+  .seven__right-columns {
+    flex-direction: column;
+  }
+  .seven__vse-usluge {
+    width: 160px;
+    height: 40px;
+    top: 565px;
+    right: 152px;
+  }
+  .seven__right {
+    margin-bottom: 25px;
+    min-height: 700px;
+  }
+  .seven__column-3 {
+    position: relative;
+    top: 30px;
+  }
+
+  .column-1 {
+    height: 412px;
+  }
+  .column-1__derector {
+    margin: 10px 0px 0px 0px;
+  }
+
+  .columns-right {
+    margin: 0px 0px 0px 27px;
+  }
+
+  .eight {
+    height: 570px;
+  }
+  .eight__container {
+    padding: 6px 6px 6px 6px;
+  }
+  .eight__title {
+    font-size: 15px;
+    margin: 0px 0px 0px 6px;
+  }
+  .eight__text {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+  }
+  .eight__text br {
+    display: none;
+  }
+  .eight__becpl-Consul {
+    margin: 24px 0px 0px 20px;
+  }
+  .eight__contacts {
+    margin: 7px 0px 0px 20px;
+  }
+
+  .map {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 10px;
+    left: 33px;
+  }
+
+  .footer__prava {
+    text-align: center;
+  }
+}
